@@ -5,38 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Calendar - Ostrzeżenie</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        .container { max-width: 600px; margin: auto; background: #ffebcd; padding: 20px; border-radius: 8px; }
-        .button { display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f7fc; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+        }
+        .container { 
+            max-width: 700px; 
+            margin: 50px auto; 
+            background: #ffffff; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            text-align: center; 
+        }
+        h1 { 
+            color: #d9534f; 
+            font-size: 28px; 
+            margin-bottom: 20px; 
+        }
+        p { 
+            font-size: 16px; 
+            line-height: 1.6; 
+            margin: 20px 0; 
+        }
+        .highlight {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        ul {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+            list-style-type: square;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer { 
+            margin-top: 30px; 
+            font-size: 14px; 
+            color: #888; 
+        }
     </style>
 </head>
 <body>
     <div class="container">
-       <h1>Uwaga! Uległeś(aś) skutecznej próbie phishingu!</h1>
-<p>    Wyłudzanie informacji, złośliwe oprogramowanie i ataki typu „odmowa usługi” pozostały
-    najczęstszymi przyczynami naruszeń danych w 2021 r.
-    Raport CISCO dotyczący trendów w zakresie cyberbezpieczeństwa w 2021 r. wskazuje, że phishing
-    stanowi około 90% naruszeń danych, a co najmniej jedna osoba kliknęła łącze phishingowe w około
-    86% badanych organizacji.</p>
-<p>
-    Zasady bezpieczeństwa w sieci:
-    1. Nie otwieraj wiadomości i załączników otrzymanych e-mailem od nieznanych nadawców.
-    2. Nie otwieraj żadnych linków załączonych do wiadomości pochodzących z nieznanego źródła.
-    3. Nigdy nie przesyłaj danych wrażliwych, tj. haseł i loginów w wiadomościach tekstowych czy
-    mailowych.
-</p>
+        <h1>Uwaga! Uległeś(aś) skutecznej próbie phishingu!</h1>
+        <p>Wyłudzanie informacji, złośliwe oprogramowanie i ataki typu „odmowa usługi” pozostały najczęstszymi przyczynami naruszeń danych w 2021 r.</p>
+        <p>Raport CISCO dotyczący trendów w zakresie cyberbezpieczeństwa w 2021 r. wskazuje, że phishing stanowi około <span class="highlight">90%</span> naruszeń danych, a co najmniej jedna osoba kliknęła łącze phishingowe w około <span class="highlight">86%</span> badanych organizacji.</p>
+        
+        <p>W celu zapewnienia bezpieczeństwa w sieci, należy przestrzegać następujących zasad:</p>
+        
+        <ul>
+            <li><strong>Nie otwieraj wiadomości i załączników otrzymanych e-mailem od nieznanych nadawców.</strong></li>
+            <li><strong>Nie otwieraj żadnych linków załączonych do wiadomości pochodzących z nieznanego źródła.</strong></li>
+            <li><strong>Nigdy nie przesyłaj danych wrażliwych, tj. haseł i loginów w wiadomościach tekstowych czy mailowych.</strong></li>
+        </ul>
 
-<p>Działania prowadzone w ramach akcji edukacyjnej</p>.
+        <p><strong>Działania prowadzone w ramach akcji edukacyjnej:</strong></p>
+        <p>Twoje bezpieczeństwo w sieci jest najważniejsze. Pamiętaj, aby być czujnym na potencjalne próby phishingu!</p>
+        
+        <footer>
+            <p>Strona została stworzona w ramach edukacyjnej akcji na rzecz bezpieczeństwa w sieci.</p>
+        </footer>
     </div>
-
-    <script>
-        // Pobierz docelowy link z parametru URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const targetUrl = urlParams.get('redirect');
-
-        if (targetUrl) {
-            document.getElementById('continue-btn').href = decodeURIComponent(targetUrl);
-        }
-    </script>
 </body>
 </html>
